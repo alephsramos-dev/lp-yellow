@@ -1,0 +1,158 @@
+.home__padding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.home__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.home__background{
+    background-color: #fbf9ec;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.home__background::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: #ffce33;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 88%);
+}
+
+.home__elements{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    position: relative;
+}
+
+.home__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.home__texts h1{
+    font-size: 7rem;
+    list-style: 100%;
+    font-weight: 900;
+}
+
+.home__texts p{
+    font-size: 1.4rem;
+    width: 90%;
+}
+
+.home__img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+
+.home__img img{
+    width: 60vw;
+    object-fit: contain;
+    position: absolute;
+    left: -20%;
+    top: -0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg);
+    height: 80vh;
+    z-index: 3;
+}
+
+.home__reserv{
+    width: 100%;
+    height: 30%;
+    position: sticky;
+    background-color: #131722;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;   
+    justify-content: center;
+    padding: 15px 30px; 
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.home__reserv h2{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    height: 20%;
+}
+
+.home__div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    position: relative;
+    z-index: 6;
+}
+
+.home__reserv__card{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;    
+    justify-content: center;
+    position: relative;
+    z-index: 6;
+}
+
+.home__reserv__card p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home__reserv__card select{
+    width: 90%;
+    height: 30%;
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.8;
+    position: relative;
+    z-index: 6;
+}
+
+.home__reserv__card button{
+    background-color: #ffce33;
+    width: 90%;
+    height: 30%;
+    border: none;
+    color: #000;
+}

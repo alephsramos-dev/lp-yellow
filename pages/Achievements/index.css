@@ -1,0 +1,94 @@
+.achievements__padding{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    background-color: #fbf9ec;
+}
+
+.achievements__container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.achievements__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.achievements__title h1{
+    font-size: 2.8rem;
+    width: 40%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.achievements__div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+.achievements__left,
+.achievements__right{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.achievements__center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.achievements__center img{
+    width: 30vw;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.achievements__numbers{
+    border-left: 1px solid #131722;
+    border-bottom: 1px solid #131722;
+    padding: 20px 20px;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.achievements__numbers:nth-child(2){
+    border-bottom: none;
+    border-top: 1px solid #131722;
+}
+
+.achievements__numbers h1{
+    font-size: 2.4rem;
+}
+
+.achievements__numbers p{
+    font-size: 1.2rem;
+}

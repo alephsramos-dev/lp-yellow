@@ -1,0 +1,69 @@
+.nav__padding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.nav__container img{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.nav__container ul{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    height: 100%;
+}
+
+.nav__container ul a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.nav__container button {
+    width: 15%;
+    padding: 15px 40px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    position: relative; /* Necessário para que o ::before seja posicionado corretamente */
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.nav__container button::before {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao botão */
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    bottom: -5px; /* Posiciona a linha fora do botão */
+    border: 1px solid #000;
+    background-color: transparent;
+    z-index: -1;
+}

@@ -1,0 +1,108 @@
+.countries__padding{
+    padding: 0 10%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbf9ec;
+}
+
+.countries__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.countries__title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.countries__title h1{
+    font-size: 2.8rem;
+    width: 30%;
+    font-weight: 800;
+}
+
+.countries__title button{
+    width: 15%;
+    padding: 15px 40px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    position: relative; /* Necessário para que o ::before seja posicionado corretamente */
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.countries__title button::before {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao botão */
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    bottom: -5px; /* Posiciona a linha fora do botão */
+    border: 1px solid #000;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.countries__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    height: 80%;
+}
+
+.countries__card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #000;
+}
+
+.countries__card:nth-child(3){
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    top: 6px;
+    left: 9px;
+}
+
+.countries__card:nth-child(3)::before {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao botão */
+    width: 100%;
+    height: 100%;
+    left: -9px;
+    bottom: 6px; /* Posiciona a linha fora do botão */
+    border: 1px solid #131722;
+    background-color: #fff;
+    z-index: -2;
+}
+
+.countries__card img{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.countries__card h2{
+    font-size: 2rem
+}
